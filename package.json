@@ -1,0 +1,26 @@
+{
+  "name": "lesson-task-workflow2-module3-lesson2",
+  "version": "1.0.0",
+  "description": "Convert the fetch requests in `js/script.js` to use axios instead.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btfredr/lesson-task-workflow2-module3-lesson2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btfredr/lesson-task-workflow2-module3-lesson2/issues"
+  },
+  "homepage": "https://github.com/btfredr/lesson-task-workflow2-module3-lesson2#readme",
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
