@@ -1,42 +1,30 @@
 const { default: axios } = require("axios");
 
 async function postRequest() {
-	const response = await axios.get("https://jsonplaceholder.typicode.com/posts", {
-		method: "POST",
-		body: JSON.stringify({
-			title: "foo",
-			body: "bar",
-			userId: 1,
-		}),
-		headers: {
-			"Content-type": "application/json; charset=UTF-8",
-		},
+	const response = await axios.post("https://jsonplaceholder.typicode.com/posts", {
+		title: "foo",
+		body: "bar",
+		userId: 1,
 	});
-	console.log(response.data)
+	console.log(response)
 }
 
 postRequest();
 
 async function putRequest() {
-	const response = await axios.get("https://jsonplaceholder.typicode.com/posts/1", {
-		method: "PUT",
-		body: JSON.stringify({
-			id: 1,
-			title: "foot",
-			body: "bart",
-			userId: 1,
-		}),
-		headers: {
-			"Content-type": "application/json; charset=UTF-8",
-		},
+	const response = await axios.put("https://jsonplaceholder.typicode.com/posts/1", {
+		id: 1,
+		title: "foot",
+		body: "bart",
+		userId: 1,
 	});
-	console.log(response.data)
+	console.log(response)
 }
 
 putRequest();
 
 function deleteRequest() {
-	axios.get("https://jsonplaceholder.typicode.com/posts/1", {
+	axios.delete("https://jsonplaceholder.typicode.com/posts/1", {
 		method: "DELETE",
 	});
 }
